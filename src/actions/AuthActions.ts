@@ -1,5 +1,3 @@
-import { Dispatch } from "redux";
-
 export const authTypes = {
     LOGIN: 'login',
     REGISTER: 'register'
@@ -31,7 +29,7 @@ export const login = (credentials: {}) => async (dispatch: any) => {
     
 }
 
-export const register = (credentials: {}) => async (dispatch: Dispatch) => {
+export const register = (credentials: {}) => async (dispatch: any) => {
     try {
         const res = await fetch ('http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/register', {
             method: 'POST',

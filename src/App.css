@@ -1,3 +1,7 @@
+.inline {
+  display: inline-block;
+}
+
 /*****************************
   NAV
 *****************************/
@@ -11,7 +15,6 @@
   margin-right: 2em
 }
 
-
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #000000;
 }
@@ -22,7 +25,7 @@
 }
 
 .bg-light {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 nav {
@@ -34,22 +37,34 @@ nav {
 }
 
 /*****************************
-  Login
+  Auth Buttons
 *****************************/
-.btn-login, .btn-login:hover, .btn-login:active, .btn-login:visited {
+.btn-login {
   background-color: #f16930;
-  color: #ffffff;
+  color: #000000;
 }
 
-.btn-register.outline, .btn-register.outline:hover, .btn-register.outline:focus, .btn-register.outline:active, .btn-register.outline.active, .open > .dropdown-toggle.btn-register {
-	color: #50545d;
-  border-color: #50545d;
+.btn-login:hover, .btn-login:active, .btn-login:visited {
+  background-color: #f16930;
+  color: #ffffff !important;
 }
-.btn-register.outline:active, .btn-register.outline.active {
-	border-color: #50545d;
-	color: #50545d;
-	box-shadow: none;
+
+.btn-register {
+  background-color: #aaaaaa;
+  color: #000000;
 }
-.inline {
-  display: inline-block;
+
+.btn-register:hover, .btn-register:active, .btn-register:visited {
+  background-color: #aaaaaa;
+  color: #ffffff !important;
+}
+
+.btn-logout {
+  background-color: #aaaaaa;
+  color: #000000;
+}
+
+.btn-logout:hover, .btn-logout:active, .btn-logout:visited {
+  background-color: #a71616;
+  color: #ffffff !important;
 }

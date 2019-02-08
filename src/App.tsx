@@ -7,17 +7,17 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import './include/Bootstrap';
 import { store } from './Store';
-import HomeView from './views/HomeView';
-import ProfileView from './views/ProfileView';
-import AllUsersView from './views/AllUsersView';
-import UserIdView from './views/UserIdView';
-import UpdateUserView from './views/UpdateUserView';
-import SubmitReimbursementView from './views/SubmitReimbursementView';
-import ReimbursementsView from './views/ReimbursementsView';
-import StatusReimbursementsView from './views/StatusReimbursementsView';
-import AllReimbursementsView from './views/AllReimbursementsView';
-import AuthorReimbursementsView from './views/AuthorReimbursementsView';
-import UpdateReimbursementView from './views/UpdateReimbursementView';
+import HomeView from './views/HomeView/HomeView';
+import ProfileView from './views/ProfileView/ProfileView.container';
+import AllUsersView from './views/AllUsersView/AllUsersView';
+import UserIdView from './views/UserIdView/UserIdView';
+import UpdateUserView from './views/UpdateUserView/UpdateUserView';
+import SubmitReimbursementView from './views/SubmitReimbursementView/SubmitReimbursementView';
+import ReimbursementsView from './views/ReimbursementsView/ReimbursementsView';
+import StatusReimbursementsView from './views/StatusReimbursementsView/StatusReimbursementsView';
+import AllReimbursementsView from './views/AllReimbursementsView/AllReimbursementsView';
+import AuthorReimbursementsView from './views/AuthorReimbursementsView/AuthorReimbursementsView';
+import UpdateReimbursementView from './views/UpdateReimbursementView/UpdateReimbursementView';
 
 class App extends Component {
   state = {

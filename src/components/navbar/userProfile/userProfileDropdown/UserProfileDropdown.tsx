@@ -42,6 +42,9 @@ class UserProfileDropdown extends React.Component<UserProfileDropdownProps, User
                 <AdminDropdownComponent />
             )
         }
+        else {
+            return <div>ERROR</div>
+        }
     }
 }
  
