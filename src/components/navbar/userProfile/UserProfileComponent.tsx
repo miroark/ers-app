@@ -2,6 +2,7 @@ import React from 'react';
 import UserProfileLogin from './userProfileLogin/UserProfileLogin.container';
 import UserProfileDropdown from './userProfileDropdown/UserProfileDropdown.container';
 import UserProfileRegister from './userProfileRegister/UserProfileRegister.container';
+import UserProfileLogout from './UserProfileLogout/UserProfileLogout';
 
 export interface UserProfileComponentProps {
     token: string,
@@ -29,14 +30,15 @@ class UserProfileComponent extends React.Component<UserProfileComponentProps, Us
         if (this.props.token){
             // The user is already logged in. Give them access to their profile, and tickets
             return ( 
-                <div className="ml-auto navbar-nav inline" id="user-profile-auth">
+                <div className="ml-auto p-2" id="user-profile-auth">
                     <UserProfileDropdown />
+                    <UserProfileLogout />
                 </div>
                 );
         } else {
             // User needs to log in. Give them a login modal and toggle button.
             return (
-                <div className="ml-auto navbar-nav inline" id="user-profile-auth">
+                <div className="ml-auto p-2" id="user-profile-auth">
                     <UserProfileLogin />
                     <UserProfileRegister />
                 </div>

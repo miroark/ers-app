@@ -1,7 +1,7 @@
 import  React from 'react';
 import AdminDropdownComponent from './adminDropdown/AdminDropdownComponenet.container';
 import ManagerDropdownComponent from './managerDropdown/ManagerDropdownComponent.container';
-import UserDorpdownComponentContainer from './userDropdown/UserDorpdownComponent.container';
+import UserDropdownComponent from './userDropdown/UserDorpdownComponent.container';
 
 export interface UserProfileDropdownProps {
     token: string,
@@ -29,7 +29,7 @@ class UserProfileDropdown extends React.Component<UserProfileDropdownProps, User
     render() { 
         if(this.props.user.role === 1){
             return (
-                <UserDorpdownComponentContainer />
+                <UserDropdownComponent />
             )
         }
         else if(this.props.user.role === 2){

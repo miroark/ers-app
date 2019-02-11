@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, withRouter } from 'react-router-dom';
 import { Col } from 'reactstrap';
 import Jumbotron from 'reactstrap/lib/Jumbotron';
 import './App.css';
@@ -12,8 +12,8 @@ import ProfileView from './views/ProfileView/ProfileView.container';
 import AllUsersView from './views/AllUsersView/AllUsersView';
 import UserIdView from './views/UserIdView/UserIdView';
 import UpdateUserView from './views/UpdateUserView/UpdateUserView';
-import SubmitReimbursementView from './views/SubmitReimbursementView/SubmitReimbursementView';
-import ReimbursementsView from './views/ReimbursementsView/ReimbursementsView';
+import SubmitReimbursementView from './views/SubmitReimbursementView/SubmitReimbursementView.container';
+import ReimbursementsView from './views/ReimbursementsView/ReimbursementsView.container';
 import StatusReimbursementsView from './views/StatusReimbursementsView/StatusReimbursementsView';
 import AllReimbursementsView from './views/AllReimbursementsView/AllReimbursementsView';
 import AuthorReimbursementsView from './views/AuthorReimbursementsView/AuthorReimbursementsView';

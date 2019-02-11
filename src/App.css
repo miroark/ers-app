@@ -1,7 +1,3 @@
-.inline {
-  display: inline-block;
-}
-
 /*****************************
   NAV
 *****************************/
@@ -67,4 +63,8 @@ nav {
 .btn-logout:hover, .btn-logout:active, .btn-logout:visited {
   background-color: #a71616;
   color: #ffffff !important;
+}
+
+.dropdown-inline {
+  display: inline-block;
 }

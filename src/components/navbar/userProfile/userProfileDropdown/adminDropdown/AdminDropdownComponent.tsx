@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { DropdownToggle, DropdownMenu, DropdownItem, Dropdown } from 'reactstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import UserProfileLogout from '../UserProfileLogout/UserProfileLogout';
 
 export interface AdminDropdownComponentProps {
     token: string,
@@ -33,8 +32,8 @@ class AdminDropdownComponent extends React.Component<AdminDropdownComponentProps
     
     render() { 
         return ( 
-            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                <DropdownToggle caret>
+            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} className="dropdown-inline">
+                <DropdownToggle color="login" caret>
                 {this.props.user.username}
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -71,7 +70,6 @@ class AdminDropdownComponent extends React.Component<AdminDropdownComponentProps
                     <LinkContainer to='/reimbursement-update'>
                         <DropdownItem>Update reimbursement</DropdownItem>
                     </LinkContainer>
-                    <DropdownItem><UserProfileLogout /></DropdownItem>
                 </DropdownMenu>
             </Dropdown>
          );

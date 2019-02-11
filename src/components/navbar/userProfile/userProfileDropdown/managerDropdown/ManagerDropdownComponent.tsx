@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { DropdownToggle, DropdownMenu, DropdownItem, Dropdown } from 'reactstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import UserProfileLogout from '../UserProfileLogout/UserProfileLogout';
 
 export interface ManagerDropdownComponentProps {
     token: string,
@@ -33,8 +32,8 @@ class ManagerDropdownComponent extends React.Component<ManagerDropdownComponentP
     
     render() { 
         return ( 
-            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                <DropdownToggle caret>
+            <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} className="dropdown-inline">
+                <DropdownToggle color="login" caret>
                 {this.props.user.username}
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -68,7 +67,6 @@ class ManagerDropdownComponent extends React.Component<ManagerDropdownComponentP
                     <LinkContainer to='reimbursements-author'>
                         <DropdownItem>View reimbursements by author</DropdownItem>
                     </LinkContainer>
-                    <DropdownItem><UserProfileLogout /></DropdownItem>
                 </DropdownMenu>
             </Dropdown>
          );
