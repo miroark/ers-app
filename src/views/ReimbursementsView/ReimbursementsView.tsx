@@ -57,7 +57,6 @@ class ReimbursementsView extends React.Component<ReimbursementsViewProps, Reimbu
     }
 
     parseStatus = (entry: number) => {
-        console.log(entry)
         switch (entry) {
             case 1:
                 return 'Pending';

@@ -59,7 +59,6 @@ class AllReimbursementsView extends React.Component<AllReimbursementsViewProps, 
     }
     
     parseStatus = (entry: number) => {
-        console.log(entry)
         switch (entry) {
             case 1:
                 return 'Pending';
@@ -97,7 +96,7 @@ class AllReimbursementsView extends React.Component<AllReimbursementsViewProps, 
                                     <TableCell>{entry.dateResolved}</TableCell>
                                     <TableCell>{entry.description}</TableCell>
                                     <TableCell>{entry.resolver}</TableCell>
-                                    {this.parseStatus(entry.status)}
+                                    <TableCell>{this.parseStatus(entry.status)}</TableCell>
                                 </TableRow>
                             )
                         })
