@@ -19,8 +19,6 @@ export interface AuthorReimbursementsViewState {
     data: [],
     author: number
 }
-
-
  
 class AuthorReimbursementsView extends React.Component<AuthorReimbursementsViewProps, AuthorReimbursementsViewState> {
     constructor(props: AuthorReimbursementsViewProps){
