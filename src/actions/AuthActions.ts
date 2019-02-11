@@ -1,6 +1,7 @@
 export const authTypes = {
     LOGIN: 'login',
-    REGISTER: 'register'
+    REGISTER: 'register',
+    LOGOUT: 'logout'
 }
 
 export const login = (credentials: {}) => async (dispatch: any) => {
@@ -53,4 +54,22 @@ export const register = (credentials: {}) => async (dispatch: any) => {
         console.log(err);
     }
     
+}
+
+export const logout = () => {
+    return {
+        payload: {
+            token: '',
+            user: {
+                id: 0,
+                role: 0,
+                username: '',
+                password: '',
+                email: '',
+                firstName: '',
+                lastName: ''
+            }
+        },
+        type: authTypes.LOGOUT
+    }
 }

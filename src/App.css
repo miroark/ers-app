@@ -36,7 +36,7 @@ nav {
   Auth Buttons
 *****************************/
 .btn-login {
-  background-color: #f16930;
+  background-color: #f8f9fa;
   color: #000000;
 }
 
@@ -46,7 +46,7 @@ nav {
 }
 
 .btn-register {
-  background-color: #aaaaaa;
+  background-color: #f8f9fa;
   color: #000000;
 }
 
@@ -56,7 +56,7 @@ nav {
 }
 
 .btn-logout {
-  background-color: #aaaaaa;
+  background-color: #f8f9fa;
   color: #000000;
 }
 

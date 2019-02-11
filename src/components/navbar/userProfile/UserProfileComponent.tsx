@@ -2,7 +2,7 @@ import React from 'react';
 import UserProfileLogin from './userProfileLogin/UserProfileLogin.container';
 import UserProfileDropdown from './userProfileDropdown/UserProfileDropdown.container';
 import UserProfileRegister from './userProfileRegister/UserProfileRegister.container';
-import UserProfileLogout from './UserProfileLogout/UserProfileLogout';
+import UserProfileLogout from './UserProfileLogout/UserProfileLogout.container';
 
 export interface UserProfileComponentProps {
     token: string,

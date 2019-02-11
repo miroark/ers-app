@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button } from 'reactstrap';
 
 export interface UserProfileLogoutProps {
-    
+    logout: () => void
 }
  
 export interface UserProfileLogoutState {
@@ -13,7 +13,7 @@ class UserProfileLogout extends React.Component<UserProfileLogoutProps, UserProf
     render() { 
         return ( 
             <React.Fragment>
-                <Button color='logout'>Logout</Button>
+                <Button color='logout' onClick={this.props.logout}>Logout</Button>
             </React.Fragment>
         );
     }
