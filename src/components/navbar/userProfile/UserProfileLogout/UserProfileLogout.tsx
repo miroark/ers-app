@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 export interface UserProfileLogoutProps {
     logout: () => void
@@ -13,7 +14,9 @@ class UserProfileLogout extends React.Component<UserProfileLogoutProps, UserProf
     render() { 
         return ( 
             <React.Fragment>
-                <Button color='logout' onClick={this.props.logout}>Logout</Button>
+                <Link to="/home">
+                    <Button color='logout' onClick={this.props.logout}>Logout</Button>
+                </Link>
             </React.Fragment>
         );
     }

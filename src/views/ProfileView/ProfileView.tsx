@@ -20,6 +20,19 @@ export interface ProfileViewState {
 }
  
 class ProfileView extends React.Component<ProfileViewProps, ProfileViewState> {
+    parseRole = (entry: number) => {
+        switch(entry) {
+            case 1:
+                return 'User';
+            case 2:
+                return 'Financial Manager';
+            case 3:
+                return 'Admin';
+            default:
+                return 'DB_ERROR';
+        }
+    }
+    
     render() { 
         return (  
             <div>
@@ -56,7 +69,7 @@ class ProfileView extends React.Component<ProfileViewProps, ProfileViewState> {
                                 {this.props.user.id}
                             </TableCell>
                             <TableCell>
-                                {this.props.user.role}
+                                {this.parseRole(this.props.user.role)}
                             </TableCell>
                             <TableCell>
                                 {this.props.user.username}

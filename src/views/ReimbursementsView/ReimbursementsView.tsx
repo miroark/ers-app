@@ -55,6 +55,20 @@ class ReimbursementsView extends React.Component<ReimbursementsViewProps, Reimbu
             });
         }    
     }
+
+    parseStatus = (entry: number) => {
+        console.log(entry)
+        switch (entry) {
+            case 1:
+                return 'Pending';
+            case 2:
+                return 'Approved';
+            case 3:
+                return 'Denied';
+            default:
+                return 'DB_ERROR';
+        }
+    }
     
     render() { 
         return ( 
@@ -81,7 +95,7 @@ class ReimbursementsView extends React.Component<ReimbursementsViewProps, Reimbu
                                     <TableCell>{entry.dateResolved}</TableCell>
                                     <TableCell>{entry.description}</TableCell>
                                     <TableCell>{entry.resolver}</TableCell>
-                                    <TableCell>{entry.status}</TableCell>
+                                    <TableCell>{this.parseStatus(entry.status)}</TableCell>
                                 </TableRow>
                             )
                         })

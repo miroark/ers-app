@@ -9,13 +9,13 @@ import './include/Bootstrap';
 import { store } from './Store';
 import HomeView from './views/HomeView/HomeView';
 import ProfileView from './views/ProfileView/ProfileView.container';
-import AllUsersView from './views/AllUsersView/AllUsersView';
+import AllUsersView from './views/AllUsersView/AllUsersView.container';
 import UserIdView from './views/UserIdView/UserIdView';
 import UpdateUserView from './views/UpdateUserView/UpdateUserView';
 import SubmitReimbursementView from './views/SubmitReimbursementView/SubmitReimbursementView.container';
 import ReimbursementsView from './views/ReimbursementsView/ReimbursementsView.container';
 import StatusReimbursementsView from './views/StatusReimbursementsView/StatusReimbursementsView';
-import AllReimbursementsView from './views/AllReimbursementsView/AllReimbursementsView';
+import AllReimbursementsView from './views/AllReimbursementsView/AllReimbursementsView.container';
 import AuthorReimbursementsView from './views/AuthorReimbursementsView/AuthorReimbursementsView';
 import UpdateReimbursementView from './views/UpdateReimbursementView/UpdateReimbursementView';
 
