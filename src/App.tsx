@@ -17,7 +17,7 @@ import ReimbursementsView from './views/ReimbursementsView/ReimbursementsView.co
 import StatusReimbursementsView from './views/StatusReimbursementsView/StatusReimbursementsView.container';
 import AllReimbursementsView from './views/AllReimbursementsView/AllReimbursementsView.container';
 import AuthorReimbursementsView from './views/AuthorReimbursementsView/AuthorReimbursementsView.container';
-import UpdateReimbursementView from './views/UpdateReimbursementView/UpdateReimbursementView';
+import UpdateReimbursementView from './views/UpdateReimbursementView/UpdateReimbursementView.container';
 
 class App extends Component {
   state = {
