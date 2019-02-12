@@ -31,6 +31,7 @@ class SubmitReimbursementView extends React.Component<SubmitReimbursementViewPro
             reimbursementType: 0
         };
     }
+    
     radioChange = (event: any) => {
         this.setState({
             reimbursementType: event.currentTarget.value

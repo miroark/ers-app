@@ -76,7 +76,8 @@ class AuthorReimbursementsView extends React.Component<AuthorReimbursementsViewP
             this.setState({
                 data: []
             });
-        }    }
+        }    
+    }
     
     render() { 
         return ( 
