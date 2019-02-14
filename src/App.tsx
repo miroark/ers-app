@@ -11,7 +11,7 @@ import HomeView from './views/HomeView/HomeView';
 import ProfileView from './views/ProfileView/ProfileView.container';
 import AllUsersView from './views/AllUsersView/AllUsersView.container';
 import UserIdView from './views/UserIdView/UserIdView.container';
-import UpdateUserView from './views/UpdateUserView/UpdateUserView';
+import UpdateUserView from './views/UpdateUserView/UpdateUserView.container';
 import SubmitReimbursementView from './views/SubmitReimbursementView/SubmitReimbursementView.container';
 import ReimbursementsView from './views/ReimbursementsView/ReimbursementsView.container';
 import StatusReimbursementsView from './views/StatusReimbursementsView/StatusReimbursementsView.container';
