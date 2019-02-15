@@ -47,9 +47,6 @@ class ManagerDropdownComponent extends React.Component<ManagerDropdownComponentP
                     <LinkContainer to='/user-by-id'>
                         <DropdownItem>View user by id</DropdownItem>
                     </LinkContainer>
-                    <LinkContainer to='update-user'>
-                        <DropdownItem>Update user information</DropdownItem>
-                    </LinkContainer>
                     <DropdownItem divider />
                     <DropdownItem header>Reimbursements</DropdownItem>
                     <LinkContainer to='/submit'>
@@ -58,14 +55,17 @@ class ManagerDropdownComponent extends React.Component<ManagerDropdownComponentP
                     <LinkContainer to='/reimbursements'>
                         <DropdownItem>View my reimbursements</DropdownItem>
                     </LinkContainer>
-                    <LinkContainer to='all-reimbursements'>
+                    <LinkContainer to='/all-reimbursements'>
                         <DropdownItem>View all reimbursements</DropdownItem>
                     </LinkContainer>
-                    <LinkContainer to='reimbursements-status'>
+                    <LinkContainer to='/reimbursements-status'>
                         <DropdownItem>View reimbursements by status</DropdownItem>
                     </LinkContainer>
-                    <LinkContainer to='reimbursements-author'>
+                    <LinkContainer to='/reimbursements-author'>
                         <DropdownItem>View reimbursements by author</DropdownItem>
+                    </LinkContainer>
+                    <LinkContainer to='/reimbursement-update'>
+                        <DropdownItem>Update reimbursement</DropdownItem>
                     </LinkContainer>
                 </DropdownMenu>
             </Dropdown>
