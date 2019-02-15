@@ -29,7 +29,7 @@ class AllUsersView extends React.Component<AllUsersViewProps, AllUsersViewState>
 
     async componentDidMount() {
         try{
-            const url = 'http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/users';
+            const url = 'http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/users';
             const res = await fetch (url,
             {
                 method: 'GET',
@@ -80,7 +80,6 @@ class AllUsersView extends React.Component<AllUsersViewProps, AllUsersViewState>
                         <TableCell>Id</TableCell>
                         <TableCell>Role</TableCell>
                         <TableCell>Username</TableCell>
-                        <TableCell>Password</TableCell>
                         <TableCell>Email</TableCell>
                         <TableCell>First Name</TableCell>
                         <TableCell>Last Name</TableCell>
@@ -94,7 +93,6 @@ class AllUsersView extends React.Component<AllUsersViewProps, AllUsersViewState>
                                     <TableCell>{entry.id}</TableCell>
                                     <TableCell>{this.parseRole(entry.role)}</TableCell>
                                     <TableCell>{entry.username}</TableCell>
-                                    <TableCell>{entry.password}</TableCell>
                                     <TableCell>{entry.email}</TableCell>
                                     <TableCell>{entry.firstName}</TableCell>
                                     <TableCell>{entry.lastName}</TableCell>

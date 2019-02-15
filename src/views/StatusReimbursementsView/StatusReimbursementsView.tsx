@@ -44,7 +44,7 @@ class StatusReimbursementsView extends React.Component<StatusReimbursementsViewP
 
     fetchStatusTickets = async() => {
         try{
-            const url = 'http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/reimbursements/status/' + this.state.status;
+            const url = 'http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/reimbursements/status/' + this.state.status;
             const res = await fetch (url,
             {
                 method: 'GET',

@@ -6,7 +6,7 @@ export const authTypes = {
 
 export const login = (credentials: {}) => async (dispatch: any) => {
     try {
-        const res = await fetch ('http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/login', {
+        const res = await fetch ('http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/login', {
             method: 'POST',
             body: JSON.stringify(credentials),
             headers: {
@@ -32,7 +32,7 @@ export const login = (credentials: {}) => async (dispatch: any) => {
 
 export const register = (credentials: {}) => async (dispatch: any) => {
     try {
-        const res = await fetch ('http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/register', {
+        const res = await fetch ('http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/register', {
             method: 'POST',
             body: JSON.stringify(credentials),
             headers: {

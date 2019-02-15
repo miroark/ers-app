@@ -50,7 +50,7 @@ class AuthorReimbursementsView extends React.Component<AuthorReimbursementsViewP
 
     fetchAuthorTickets = async() => {
         try{
-            const url = 'http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/reimbursements/author/userId/' + this.state.author;
+            const url = 'http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/reimbursements/author/userId/' + this.state.author;
             const res = await fetch (url,
             {
                 method: 'GET',

@@ -48,7 +48,6 @@ class UserIdView extends React.Component<UserIdViewProps, UserIdViewState> {
                 <TableCell>{user.id}</TableCell>
                 <TableCell>{this.parseRole(user.role)}</TableCell>
                 <TableCell>{user.username}</TableCell>
-                <TableCell>{user.password}</TableCell>
                 <TableCell>{user.email}</TableCell>
                 <TableCell>{user.firstName}</TableCell>
                 <TableCell>{user.lastName}</TableCell>
@@ -58,7 +57,7 @@ class UserIdView extends React.Component<UserIdViewProps, UserIdViewState> {
     
     fetchUser = async () => {
         try{
-            const url = 'http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/users/' + this.state.id;
+            const url = 'http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/users/' + this.state.id;
             const res = await fetch (url,
             {
                 method: 'GET',
@@ -108,7 +107,6 @@ class UserIdView extends React.Component<UserIdViewProps, UserIdViewState> {
                             <TableCell>Id</TableCell>
                             <TableCell>Role</TableCell>
                             <TableCell>Username</TableCell>
-                            <TableCell>Password</TableCell>
                             <TableCell>Email</TableCell>
                             <TableCell>First Name</TableCell>
                             <TableCell>Last Name</TableCell>

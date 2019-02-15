@@ -28,7 +28,7 @@ class AllReimbursementsView extends React.Component<AllReimbursementsViewProps, 
     }
     async componentDidMount() {
         try{
-            const url = 'http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/reimbursements';
+            const url = 'http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/reimbursements';
             const res = await fetch (url,
             {
                 method: 'GET',

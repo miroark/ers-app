@@ -74,7 +74,7 @@ class UpdateUserView extends React.Component<UpdateUserViewProps, UpdateUserView
 
     updateUser = async () => {
         try{
-            const url = 'http://ec2-18-222-133-80.us-east-2.compute.amazonaws.com:3000/users';
+            const url = 'http://ec2-18-221-233-241.us-east-2.compute.amazonaws.com:3000/users';
             const res = await fetch (url,
             {
                 method: 'PATCH',
